@@ -20,25 +20,29 @@ class CartTableViewController: UITableViewController {
         
         tableView.tableHeaderView = headerView
         
-        
     }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-        let product = Product()
-        
-        product.name = "1907 Wall Set"
-        product.productImage = "phone-fullscreen1"
-        product.cellImage = "image-cell1"
-        product.price = 59.99
-        
-        let order = Order()
-        order.product = product
+//        let product = Product()
+//        
+//        product.name = "1907 Wall Set"
+//        product.productImage = "phone-fullscreen1"
+//        product.cellImage = "image-cell1"
+//        product.price = 59.99
+//        
+//        let order = Order()
+//        order.product = product
         
         //read orders from disk
         
-        ordersInCart = [order]
+        ordersInCart = Orders.readOrdersFromArchive()
+        if (ordersInCart == nil){
+            ordersInCart = []
+        }
+        
+        tableView.reloadData()
         
         updateTotal()
         
@@ -75,6 +79,9 @@ class CartTableViewController: UITableViewController {
             ordersInCart?.removeAtIndex(indexPath.row)
             //save array to disk
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+            if let orders = ordersInCart{
+                Orders.saveOrdersToArchive(orders)
+            }
             updateTotal()
         }
     }
