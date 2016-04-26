@@ -14,6 +14,7 @@
 		7874F0881CCE7E4C00BCD9E8 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7874F0871CCE7E4C00BCD9E8 /* ProductViewController.swift */; };
 		7874F08A1CCEAA8D00BCD9E8 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7874F0891CCEAA8D00BCD9E8 /* ContactViewController.swift */; };
 		7874F08C1CCFDB3800BCD9E8 /* ProductsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7874F08B1CCFDB3800BCD9E8 /* ProductsTableViewController.swift */; };
+		7874F08E1CD0011A00BCD9E8 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7874F08D1CD0011A00BCD9E8 /* Product.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		7874F0871CCE7E4C00BCD9E8 /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		7874F0891CCEAA8D00BCD9E8 /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		7874F08B1CCFDB3800BCD9E8 /* ProductsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsTableViewController.swift; sourceTree = "<group>"; };
+		7874F08D1CD0011A00BCD9E8 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				7874F0871CCE7E4C00BCD9E8 /* ProductViewController.swift */,
 				7874F0891CCEAA8D00BCD9E8 /* ContactViewController.swift */,
 				7874F08B1CCFDB3800BCD9E8 /* ProductsTableViewController.swift */,
+				7874F08D1CD0011A00BCD9E8 /* Product.swift */,
 			);
 			path = "GoodAsOldPhones [CodeSchoolSwiftApp]";
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			files = (
 				7874F0881CCE7E4C00BCD9E8 /* ProductViewController.swift in Sources */,
 				7874F08C1CCFDB3800BCD9E8 /* ProductsTableViewController.swift in Sources */,
+				7874F08E1CD0011A00BCD9E8 /* Product.swift in Sources */,
 				7874F0761CCE772900BCD9E8 /* AppDelegate.swift in Sources */,
 				7874F08A1CCEAA8D00BCD9E8 /* ContactViewController.swift in Sources */,
 			);
