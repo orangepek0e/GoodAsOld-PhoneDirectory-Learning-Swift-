@@ -44,8 +44,12 @@ class ProductsTableViewController: UITableViewController {
         //looks at the storyboard for any cells that contain the 'reuse identifier' specified, and the creates a cell.
      let cell = tableView.dequeueReusableCellWithIdentifier("ProductCell", forIndexPath: indexPath)
         
-        // the ? after the property means: check if this property exists, and if it does, continue running this line of code.
-     cell.textLabel?.text = "Hello there, friend!"
+        //the indexPath.row property attached to each table cell, gives us a numerical indicator for which object in the array, we're on.
+     let productName = productNames?[indexPath.row]
+        
+     if let pName = productName{
+        cell.textLabel?.text = pName
+     }
         
      cell.imageView?.image = UIImage(named: "image-cell1")
         
