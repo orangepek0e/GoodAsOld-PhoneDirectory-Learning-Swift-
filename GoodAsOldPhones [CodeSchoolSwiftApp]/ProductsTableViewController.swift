@@ -19,8 +19,17 @@ class ProductsTableViewController: UITableViewController {
         if segue.identifier == "ShowProduct"{
             //next, we try and capture the view controller that we're heading to.
             let productVC = segue.destinationViewController as? ProductViewController
-            //only set the name if productName exists
-            productVC?.productName = "Really old phone"
+            
+            //using guard, we can clean up our multiple if let statements by using commas
+            //first, it checks if these values exist, and then sets them to the 'cell' and 'indexPath' variables
+            guard let cell = sender as? UITableViewCell,
+                  let indexPath = tableView.indexPathForCell(cell)
+            else {
+                //stops the function
+                  return
+            }
+            //now I can safely reference the 'indexPath' variable now.
+            productVC?.productName = productNames?[indexPath.row]
         }
     }
 
