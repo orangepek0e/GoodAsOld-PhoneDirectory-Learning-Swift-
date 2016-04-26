@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="MfE-Xl-6DR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Fuq-K3-Vfc">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -45,9 +45,29 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zyB-6j-fZe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1609.5" y="313.5"/>
+            <point key="canvasLocation" x="1593.5" y="532.5"/>
         </scene>
-        <!--Contact View Controller-->
+        <!--Tab Bar Controller-->
+        <scene sceneID="o9E-Cz-vcH">
+            <objects>
+                <tabBarController id="Fuq-K3-Vfc" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="aov-j0-wyt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Te7-zH-ZkY" kind="relationship" relationship="viewControllers" id="KwS-s9-4uv"/>
+                        <segue destination="MfE-Xl-6DR" kind="relationship" relationship="viewControllers" id="Myu-YN-Yq4"/>
+                        <segue destination="hds-A9-sWx" kind="relationship" relationship="viewControllers" id="B99-cX-wgG"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sGE-mM-Kyw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-0.5" y="532.5"/>
+        </scene>
+        <!--Contact-->
         <scene sceneID="HZg-FU-iZ3">
             <objects>
                 <viewController id="Te7-zH-ZkY" customClass="ContactViewController" customModule="GoodAsOldPhones__CodeSchoolSwiftApp_" customModuleProvider="target" sceneMemberID="viewController">
@@ -60,6 +80,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Contact" image="icon-tabbar-contact" id="rN6-jD-PTo"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="scrollView" destination="OmE-r1-PAb" id="fzb-gD-TOZ"/>
@@ -135,9 +156,9 @@
                     </subviews>
                 </scrollView>
             </objects>
-            <point key="canvasLocation" x="627.5" y="-430.5"/>
+            <point key="canvasLocation" x="627.5" y="-234.5"/>
         </scene>
-        <!--Products Table View Controller-->
+        <!--Store-->
         <scene sceneID="KUz-Ld-rtR">
             <objects>
                 <tableViewController id="E2L-vW-9xC" customClass="ProductsTableViewController" customModule="GoodAsOldPhones__CodeSchoolSwiftApp_" customModuleProvider="target" sceneMemberID="viewController">
@@ -163,17 +184,19 @@
                             <outlet property="delegate" destination="E2L-vW-9xC" id="Xcy-cQ-5yD"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Store" id="G6f-9V-gRp"/>
                     <navigationItem key="navigationItem" id="37u-Oe-oEj"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wXc-UC-ITb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1159.5" y="313.5"/>
+            <point key="canvasLocation" x="1143.5" y="532.5"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Store-->
         <scene sceneID="NqK-1m-gMD">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MfE-Xl-6DR" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Store" image="icon-tabbar-store" id="eEH-fJ-937"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="e68-59-hx8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -186,7 +209,60 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O6L-nj-MSl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="627" y="313"/>
+            <point key="canvasLocation" x="627.5" y="532.5"/>
+        </scene>
+        <!--Cart-->
+        <scene sceneID="SA3-6h-4iW">
+            <objects>
+                <tableViewController id="hds-A9-sWx" customClass="CartTableViewController" customModule="GoodAsOldPhones__CodeSchoolSwiftApp_" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="xjy-MW-rux">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CartCell" id="tlG-iJ-dAf">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tlG-iJ-dAf" id="wo8-7t-g7t">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="hds-A9-sWx" id="KVN-0q-lJK"/>
+                            <outlet property="delegate" destination="hds-A9-sWx" id="SFd-iq-Zfs"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Cart" image="icon-tabbar-cart" id="icO-Aq-RhQ"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="headerView" destination="5fr-r0-TAc" id="FW7-Aw-vjH"/>
+                        <outlet property="totalLabel" destination="VVk-uk-g25" id="aX5-kv-cG7"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NuJ-va-EAE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="5fr-r0-TAc">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOf-qc-AyF">
+                            <rect key="frame" x="99" y="60" width="55" height="27"/>
+                            <fontDescription key="fontDescription" name="Damascus" family="Damascus" pointSize="18"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Calculated Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVk-uk-g25">
+                            <rect key="frame" x="148" y="60" width="128" height="27"/>
+                            <fontDescription key="fontDescription" name="Damascus" family="Damascus" pointSize="18"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.61193144633507845" green="0.353053821272725" blue="0.086889669314423226" alpha="0.28374335106382981" colorSpace="calibratedRGB"/>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="627.5" y="1376.5"/>
         </scene>
     </scenes>
     <resources>
@@ -195,5 +271,8 @@
         <image name="icon-about-email" width="34" height="34"/>
         <image name="icon-about-phone" width="34" height="34"/>
         <image name="icon-about-website" width="34" height="34"/>
+        <image name="icon-tabbar-cart" width="24" height="19"/>
+        <image name="icon-tabbar-contact" width="29" height="19"/>
+        <image name="icon-tabbar-store" width="34" height="19"/>
     </resources>
 </document>

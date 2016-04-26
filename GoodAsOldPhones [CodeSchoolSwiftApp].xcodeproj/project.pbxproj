@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		780AFD351CD0163C002158E2 /* Orders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780AFD341CD0163C002158E2 /* Orders.swift */; };
+		780AFD371CD01668002158E2 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780AFD361CD01668002158E2 /* Order.swift */; };
 		7874F0761CCE772900BCD9E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7874F0751CCE772900BCD9E8 /* AppDelegate.swift */; };
 		7874F07B1CCE772900BCD9E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7874F0791CCE772900BCD9E8 /* Main.storyboard */; };
 		7874F07D1CCE772900BCD9E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7874F07C1CCE772900BCD9E8 /* Assets.xcassets */; };
@@ -15,9 +17,12 @@
 		7874F08A1CCEAA8D00BCD9E8 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7874F0891CCEAA8D00BCD9E8 /* ContactViewController.swift */; };
 		7874F08C1CCFDB3800BCD9E8 /* ProductsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7874F08B1CCFDB3800BCD9E8 /* ProductsTableViewController.swift */; };
 		7874F08E1CD0011A00BCD9E8 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7874F08D1CD0011A00BCD9E8 /* Product.swift */; };
+		7874F0921CD00BB700BCD9E8 /* CartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7874F0911CD00BB700BCD9E8 /* CartTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		780AFD341CD0163C002158E2 /* Orders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Orders.swift; sourceTree = "<group>"; };
+		780AFD361CD01668002158E2 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		7874F0721CCE772900BCD9E8 /* GoodAsOldPhones [CodeSchoolSwiftApp].app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GoodAsOldPhones [CodeSchoolSwiftApp].app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7874F0751CCE772900BCD9E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7874F07A1CCE772900BCD9E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -28,6 +33,7 @@
 		7874F0891CCEAA8D00BCD9E8 /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		7874F08B1CCFDB3800BCD9E8 /* ProductsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsTableViewController.swift; sourceTree = "<group>"; };
 		7874F08D1CD0011A00BCD9E8 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		7874F0911CD00BB700BCD9E8 /* CartTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +75,9 @@
 				7874F0891CCEAA8D00BCD9E8 /* ContactViewController.swift */,
 				7874F08B1CCFDB3800BCD9E8 /* ProductsTableViewController.swift */,
 				7874F08D1CD0011A00BCD9E8 /* Product.swift */,
+				7874F0911CD00BB700BCD9E8 /* CartTableViewController.swift */,
+				780AFD361CD01668002158E2 /* Order.swift */,
+				780AFD341CD0163C002158E2 /* Orders.swift */,
 			);
 			path = "GoodAsOldPhones [CodeSchoolSwiftApp]";
 			sourceTree = "<group>";
@@ -145,6 +154,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7874F0881CCE7E4C00BCD9E8 /* ProductViewController.swift in Sources */,
+				780AFD351CD0163C002158E2 /* Orders.swift in Sources */,
+				780AFD371CD01668002158E2 /* Order.swift in Sources */,
+				7874F0921CD00BB700BCD9E8 /* CartTableViewController.swift in Sources */,
 				7874F08C1CCFDB3800BCD9E8 /* ProductsTableViewController.swift in Sources */,
 				7874F08E1CD0011A00BCD9E8 /* Product.swift in Sources */,
 				7874F0761CCE772900BCD9E8 /* AppDelegate.swift in Sources */,
